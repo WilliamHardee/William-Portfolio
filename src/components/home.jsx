@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from './button'
-
 function Home() {
   return (
     <div className="home">
@@ -8,9 +7,10 @@ function Home() {
             <h3>Hello, I am</h3>
             <h1> William Hardee</h1>
             <div className='container'>
-                <Button text="About Me"/>
-                <Button text="Projects"/>
-                <Button text="Contact"/>
+                  <Button text="About Me"/>
+                  <Button text="Projects"/>
+                  <Button text="Contact"/>
+                
             </div>
             
         </div>
