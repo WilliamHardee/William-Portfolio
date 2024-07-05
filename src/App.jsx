@@ -8,16 +8,22 @@ import Projects from './components/projects'
 
 import './App.css'
 import Education from './components/education'
+import Divider from './components/divider'
 
 function App() {
 
   return (
     <>
       <Nav/>
+      <Divider/>
       <Home/>
+      <Divider/>
       <About/>
+      <Divider/>
       <Education/>
+      <Divider/>
       <Projects/>
+      <Divider/>
     </>
   )
 }

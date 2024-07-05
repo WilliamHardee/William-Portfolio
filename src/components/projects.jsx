@@ -6,12 +6,13 @@ function Projects() {
   return (
     <div className='projects'>
         <h1>Projects</h1>
-        {projects.map(proj => (
-            <>  
-                <br></br>
+        <div className='project-list'>
+            {projects.map(proj => (
+
                 <ProjectCard title={proj.title} description={proj.description}/>
-            </>
-        ))}
+
+            ))}
+        </div>
     </div>
 
   )

@@ -14,7 +14,10 @@ function Home() {
             </div>
             
         </div>
-        <img src='/pic-modified.png' className='selfImage'></img>
+        <div className='orbit'>
+          <div className='planet'></div>
+          <img src='/pic-modified.png' className='selfImage'></img>
+        </div>
         
     </div>
   )
