@@ -1,5 +1,4 @@
 
-import {Route, Routes} from 'react-router-dom'
 import Nav from './components/nav'
 import Home from './components/home'
 import Contact from './components/contact'
@@ -9,20 +8,45 @@ import { useRef } from 'react'
 import './App.css'
 import Education from './components/education'
 import Divider from './components/divider'
+import NavItem from './components/navItem'
 
 function App() {
+
+  const aboutRef = useRef(null)
+  const educationRef = useRef(null)
+  const projectRef = useRef(null)
+  const homeRef = useRef(null)
+
+
   return (
+    
     <>
-      <Nav/>
+      <Nav>
+        <NavItem link={aboutRef} text="About Me"/>
+        <NavItem link={educationRef} text="Education"/>
+        <NavItem link={projectRef} text="Projects"/>
+      </Nav>
       <Divider/>
-      <Home/>
+      <div ref={homeRef}>
+        <Home/>
+      </div> 
       <Divider/>
-      <About/>
+      <div ref={aboutRef}>
+        <About/>
+      </div>
       <Divider/>
-      <Education/>
+      <div ref={educationRef}>
+        <Education/>
+      </div>
       <Divider/>
-      <Projects/>
+      <div ref={projectRef}>
+        <Projects/>
+      </div>
       <Divider/>
+      
+      <Nav>
+        <NavItem link={homeRef} text="To Top"/>
+      </Nav>
     </>
   )
 }

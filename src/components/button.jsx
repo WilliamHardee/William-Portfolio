@@ -1,15 +1,15 @@
 import React from 'react'
 
-function Button({text, toScroll}) {
+function Button({text, link}) {
   
-  function scrollTo(where) {
-    where.current.scrollIntoView({behavior: "smooth"})
-  }
+ 
 
   return (
-    <div onClick={()=> scrollTo(toScroll)}className='button'>
-        {text}
-    </div>
+    <a href={link} target="_blank">
+      <div className='button'>
+          {text}
+      </div>
+    </a>
   )
 }
 

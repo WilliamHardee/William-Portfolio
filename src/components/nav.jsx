@@ -1,14 +1,11 @@
 import React from 'react'
 
 
-function Nav () {
+function Nav (props) {
   return (
     <>
         <ul className='nav'>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li>Projects</li>
-            <li>Contact</li>
+            {props.children}
         </ul>
     </>
   )
