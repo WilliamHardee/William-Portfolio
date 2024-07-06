@@ -5,13 +5,12 @@ import Home from './components/home'
 import Contact from './components/contact'
 import About from './components/about'
 import Projects from './components/projects'
-
+import { useRef } from 'react'
 import './App.css'
 import Education from './components/education'
 import Divider from './components/divider'
 
 function App() {
-
   return (
     <>
       <Nav/>

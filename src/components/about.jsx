@@ -1,7 +1,11 @@
 import React from 'react'
-import { icons } from './Data'
+import { skills } from './Data'
+import { useInView } from 'react-intersection-observer'
+import { useState, useEffect } from 'react';
 
 function About() {
+  const {ref, inView, entry} = useInView();
+
   return (
     <div className="about-me" id='about-me'>
         <h1>About Me</h1>
@@ -14,14 +18,11 @@ function About() {
         </p>
         <br></br>
         <div className='skill-list'>
-            <h3>My Skills: </h3>
-            {icons.map(icon => (
-                <img className="skill-image" src={icon.link}></img>
+            <h3 ref={ref}>My Skills:</h3>
+            {skills.map(icon => (
+                <img key={icon.name} className={"skill-image " + (inView ? "visible" : "hidden")} src={icon.link}></img>
             ))}
         </div>
-    
-
-
     </div>
   )
 }

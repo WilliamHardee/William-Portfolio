@@ -9,7 +9,7 @@ function Projects() {
         <div className='project-list'>
             {projects.map(proj => (
 
-                <ProjectCard title={proj.title} description={proj.description}/>
+                <ProjectCard key={proj.title} title={proj.title} description={proj.description} skill={proj.skill}/>
 
             ))}
         </div>

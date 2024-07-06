@@ -1,8 +1,13 @@
 import React from 'react'
 
-function Button({text}) {
+function Button({text, toScroll}) {
+  
+  function scrollTo(where) {
+    where.current.scrollIntoView({behavior: "smooth"})
+  }
+
   return (
-    <div className='button'>
+    <div onClick={()=> scrollTo(toScroll)}className='button'>
         {text}
     </div>
   )
