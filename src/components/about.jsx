@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer'
 
 
 function About() {
-  const {ref, inView, entry} = useInView();
+  const [ref, inView, entry] = useInView();
   return (
     <div className="about-me" id='about-me'>
         <h1>About Me</h1>

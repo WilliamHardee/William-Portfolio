@@ -130,9 +130,9 @@ p {
 
 
 .education-card {
-  border-left-style: solid;
-  border-color: rgb(182, 140, 34);
   padding-left: 5%;
+  position: relative;
+  transform: translateX(-40%);
 }
 
 .projects {
@@ -173,6 +173,7 @@ a, a:visited {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  width: 110%;
   height: 5vh;
 }
 
@@ -202,6 +203,7 @@ a, a:visited {
 
 .project-card {
   background-color: rgb(23, 23, 26, 0.5);
+  border-color: whitesmoke;
   border-style: solid;
   border-radius: 10%;
   width: 30%;
@@ -210,6 +212,11 @@ a, a:visited {
   margin: 1%;
   
 }
+
+.project-card:hover {
+  border-color: rgb(0, 153, 255);
+}
+
 
 .projects > h1 {
   text-align: center;
@@ -277,4 +284,33 @@ a, a:visited {
     top: 0vh;
     opacity: 1;
   }
+}
+
+
+.projCard-enter {
+  opacity: 0;
+  transform: translateY(90%);
+}
+.projCard-enter-active {
+  transition: opacity 2s ease-out, transform 0.75s;
+  transform: translateY(0%);
+  opacity: 1;
+}
+.projCard-exit {
+  opacity: 0;
+}
+.projCard-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.school-container {
+  overflow: hidden;
+  border-left-style: solid;
+  border-color: rgb(182, 140, 34);
+}
+
+.from-right {
+  transform: translateX(0%);
+  transition: 1s ease-out;
 }
