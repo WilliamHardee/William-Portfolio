@@ -1,0 +1,36 @@
+.about_me {
+    position: relative;
+    width: 50vw;
+    left: 18vw;
+}
+
+
+.skill_list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 110%;
+    height: 5vh;
+}
+  
+.skill_image {
+    position: relative;
+    height: 100%;
+    margin: 1%;
+    transition: 0.8s;
+    bottom: 0;
+}
+
+.myself {
+    border-left-style: solid;
+    padding-left: 5%;
+}
+  
+.hidden {
+    opacity: 0;
+}
+  
+.visible {
+    opacity: 1;
+}
+  

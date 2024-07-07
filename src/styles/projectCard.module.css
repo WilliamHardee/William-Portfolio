@@ -1,0 +1,33 @@
+.project_card {
+    background-color: rgb(23, 23, 26, 0.5);
+    border-color: whitesmoke;
+    border-style: solid;
+    border-radius: 10%;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    margin: 1%;
+    
+}
+  
+.project_card:hover {
+    border-color: rgb(0, 153, 255);
+}
+
+
+.project_skill_list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+}
+
+
+.skill_image {
+    position: relative;
+    height: 100%;
+    margin: 1%;
+    transition: 0.8s;
+    bottom: 0;
+}

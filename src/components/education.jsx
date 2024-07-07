@@ -2,12 +2,13 @@ import React from 'react'
 import { education } from './Data'
 import { useInView } from 'react-intersection-observer'
 import EducationCard from './educationCard'
+import style from '../styles/education.module.css'
 
 function Education() {
     return (
-        <div className='education' id='education'>
+        <div className={style.education}>
             <h1>Education</h1>
-            <div className='school-container'>
+            <div className={style.school_container}>
             {education.map((school) => (
                 <>
                     <br></br>

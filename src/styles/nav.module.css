@@ -1,0 +1,14 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 1vh;
+  }
+  
+  
+  .navBrand {
+    font-size: 2rem;
+  }
+  
+
+  

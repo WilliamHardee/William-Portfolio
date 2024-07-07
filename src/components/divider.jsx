@@ -1,8 +1,9 @@
 import React from 'react'
+import style from '../styles/divider.module.css'
 
 function Divider() {
   return (
-    <div className='divider'></div>
+    <div className={style.divider}></div>
   )
 }
 

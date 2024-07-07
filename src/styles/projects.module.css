@@ -1,0 +1,40 @@
+.projects {
+    position: relative;
+    width: 80%;
+    left: 10%;
+  
+}
+  
+.projects > h1 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.project_list {
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 40vh;
+    width: 90%;
+}
+
+
+.projCard_enter {
+    opacity: 0;
+    transform: translateY(90%);
+  }
+
+.projCard_enter_active {
+    transition: opacity 2s ease-out, transform 0.75s;
+    transform: translateY(0%);
+    opacity: 1;
+}
+  .projCard_exit {
+    opacity: 0;
+  }
+  .projCard_exit_active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }

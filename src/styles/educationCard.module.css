@@ -1,0 +1,17 @@
+.img {
+    height: 10vh;
+    width: 10vh;
+}
+  
+  
+.education_card {
+    padding-left: 5%;
+    position: relative;
+    transform: translateX(-40%);
+}
+  
+
+.from_right {
+    transform: translateX(0%);
+    transition: 1s ease-out;
+}

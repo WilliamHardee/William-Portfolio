@@ -5,7 +5,7 @@ import Contact from './components/contact'
 import About from './components/about'
 import Projects from './components/projects'
 import { useRef } from 'react'
-import './App.css'
+import globalStyle from './styles/global.module.css'
 import Education from './components/education'
 import Divider from './components/divider'
 import NavItem from './components/navItem'
@@ -43,7 +43,7 @@ function App() {
         <Projects/>
       </div>
       <Divider/>
-      
+
       <Nav>
         <NavItem link={homeRef} text="To Top"/>
       </Nav>

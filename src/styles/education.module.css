@@ -1,0 +1,11 @@
+.education {
+    position: relative;
+    width: 50vw;
+    left: 18vw;
+  }
+
+  .school_container {
+    overflow: hidden;
+    border-left-style: solid;
+    border-color: rgb(182, 140, 34);
+  }
